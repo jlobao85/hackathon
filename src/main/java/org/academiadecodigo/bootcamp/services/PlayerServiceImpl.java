@@ -22,7 +22,9 @@ public class PlayerServiceImpl implements PlayerService {
     }
 
     @Override
-    public void destroyComputer() {
+    public void destroyComputer(Computer computerToDelete) {
+        player.getComputersOwned().remove(computerToDelete);
+        /*
         Computer computerToDelete = null;
         for(int i = 0; i < player.getComputersOwned().size(); i++) {
             for (int y = 0; y < player.getComputersOwned().size(); y++) {
@@ -35,7 +37,7 @@ public class PlayerServiceImpl implements PlayerService {
                 }
             }
         }
-        player.getComputersOwned().remove(computerToDelete);
+        player.getComputersOwned().remove(computerToDelete);*/
     }
 
 
@@ -53,5 +55,10 @@ public class PlayerServiceImpl implements PlayerService {
     @Override
     public void setPlayer(Player player) {
         this.player = player;
+    }
+
+    @Override
+    public void hack() {
+
     }
 }

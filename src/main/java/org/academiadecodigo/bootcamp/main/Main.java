@@ -14,5 +14,9 @@ public class Main {
         player.getComputersOwned().add(computer);
         playerService.setPlayer(player);
         playerService.mineMoney();
+
+        System.out.println(playerService.listOwnedComputers());
+        playerService.destroyComputer();
+        System.out.println(playerService.listOwnedComputers());
     }
 }
