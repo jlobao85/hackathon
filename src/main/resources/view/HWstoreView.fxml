@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="93.0" layoutY="63.0" prefHeight="200.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="colComputer" prefWidth="112.0" text="Computer" />
+          <TableColumn fx:id="colBitPerMinute" prefWidth="161.0" text="BTC p/ minute" />
+            <TableColumn fx:id="colPrice" prefWidth="126.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonBack" layoutX="264.0" layoutY="304.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="buttonBuyFatela" layoutX="507.0" layoutY="101.0" mnemonicParsing="false" onAction="#buyFatelaComputer" text="Buy" />
+      <Button fx:id="buttonBuyHighSpeed" layoutX="507.0" layoutY="150.0" mnemonicParsing="false" onAction="#buyHighSpeedComputer" text="Buy" />
+      <Button fx:id="buttonBuyServer" layoutX="507.0" layoutY="200.0" mnemonicParsing="false" onAction="#BuyServer" text="Buy" />
+   </children>
+</Pane>
