@@ -1,4 +1,5 @@
 package org.academiadecodigo.bootcamp.controller;
 
-public class MenuController {
+public class MenuController implements Controller {
+
 }
