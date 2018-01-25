@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <beans>
+        <bean id="navigation" class="org.academiadecodigo.bootcamp.navigation.Navigation">
+            <property name="controllers">
+                <map>
+                    <entry key="ComputerController" value-ref="computerController"/>
+                    <entry key="MainController" value-ref="mainController"/>
+                    <entry key="MenuController" value-ref="menuController"/>
+                    <entry key="StoreController" value-ref="storeController"/>
+                    <entry key="TerminalController" value-ref="terminalController"/>
+
+
+                </map>
+            </property>
+        </bean>
+        <bean id="mainController" class="org.academiadecodigo.bootcamp.controller.MainController">
+            <property name="playerService" ref="playerService"/>
+            </bean>
+
+        <!-- init-method="fillTable -->
+        <bean id="computerController" class="org.academiadecodigo.bootcamp.controller.ComputerController">
+
+        </bean>
+
+        <bean id="menuController" class="org.academiadecodigo.bootcamp.controller.MenuController">
+
+        </bean>
+
+        <bean id="storeController" class="org.academiadecodigo.bootcamp.controller.StoreController">
+
+        </bean>
+
+        <bean id="terminalController" class="org.academiadecodigo.bootcamp.controller.TerminalController">
+
+        </bean>
+
+    </beans>
+</beans>

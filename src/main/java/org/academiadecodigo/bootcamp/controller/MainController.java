@@ -3,9 +3,10 @@ package org.academiadecodigo.bootcamp.controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import org.academiadecodigo.bootcamp.services.PlayerService;
 
 public class MainController implements Controller {
-
+    private PlayerService playerService;
     @FXML
     public Button ButtonProgramingClass;
     @FXML
@@ -30,5 +31,9 @@ public class MainController implements Controller {
 
     public void HWStoreView(ActionEvent actionEvent) {
 
+    }
+
+    public void setPlayerService(PlayerService playerService) {
+        this.playerService = playerService;
     }
 }

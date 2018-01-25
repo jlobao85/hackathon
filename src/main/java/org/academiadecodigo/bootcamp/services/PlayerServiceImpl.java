@@ -4,6 +4,8 @@ import org.academiadecodigo.bootcamp.actions.MineMoney;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.Player;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
@@ -23,7 +25,8 @@ public class PlayerServiceImpl implements PlayerService {
 
     @Override
     public void destroyComputer(Computer computerToDelete) {
-        player.getComputersOwned().remove(computerToDelete);
+        Computer c = Collections.min(player.getComputersOwned());
+        player.getComputersOwned().remove(c);
         /*
         Computer computerToDelete = null;
         for(int i = 0; i < player.getComputersOwned().size(); i++) {
