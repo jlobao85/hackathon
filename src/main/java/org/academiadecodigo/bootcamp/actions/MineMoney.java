@@ -14,10 +14,11 @@ public class MineMoney implements Runnable {
     public void run() {
         while(true) {
             try {
-                Thread.sleep(7000);
                 for(Computer c : player.getComputersOwned()) {
-                    player.setMoneyAmount(2);
+                    player.setMoneyAmount(player.getMoneyAmount() + c.getMoneyGenerated());
                 }
+                System.out.println(player.getMoneyAmount());
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -2,6 +2,6 @@ package org.academiadecodigo.bootcamp.model;
 
 public class HighSpeedComputer extends Computer{
     public HighSpeedComputer() {
-        super(3);
+        super(2);
     }
 }

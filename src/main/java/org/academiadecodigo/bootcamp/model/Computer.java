@@ -6,4 +6,8 @@ public abstract class Computer {
     public Computer(int value) {
         moneyGenerated = value;
     }
+
+    public int getMoneyGenerated() {
+        return moneyGenerated;
+    }
 }
