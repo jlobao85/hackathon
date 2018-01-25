@@ -7,6 +7,7 @@ public class Player {
 
     private String name;
     private int moneyAmount;
+    private int experience;
     private List<Computer> computersOwned;
 
     public Player(String name) {
@@ -37,5 +38,13 @@ public class Player {
 
     public void setComputersOwned(List<Computer> computersOwned) {
         this.computersOwned = computersOwned;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public int getExperience() {
+        return experience;
     }
 }

@@ -13,8 +13,12 @@ public class PlayerServiceImpl implements PlayerService {
     private Player player;
 
     @Override
-    public void buyComputer() {
-
+    public void buyComputer(Computer computer, int price) {
+        if(player.getComputersOwned().size() >= 5) {
+            return;
+        }
+        player.getComputersOwned().add(computer);
+        player.setMoneyAmount(player.getMoneyAmount() - price);
     }
 
     @Override

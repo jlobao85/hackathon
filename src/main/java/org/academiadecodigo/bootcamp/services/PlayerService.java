@@ -6,9 +6,10 @@ import org.academiadecodigo.bootcamp.model.Player;
 import java.util.List;
 
 public interface PlayerService extends Service {
-    void buyComputer();
+    void buyComputer(Computer computer, int price);
     void destroyComputer();
     void mineMoney();
     List<Computer> listOwnedComputers();
     void setPlayer(Player player);
+    void hack();
 }
