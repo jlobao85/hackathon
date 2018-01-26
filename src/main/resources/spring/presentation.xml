@@ -27,7 +27,7 @@
         </bean>
 
         <bean id="menuController" class="org.academiadecodigo.bootcamp.controller.MenuController">
-
+            <property name="navigation" ref="navigation"/>
         </bean>
 
         <bean id="storeController" class="org.academiadecodigo.bootcamp.controller.StoreController">
