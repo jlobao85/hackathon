@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
 import org.academiadecodigo.bootcamp.services.PlayerService;
@@ -36,43 +37,17 @@ public class MainController implements Controller {
 
         List<Computer> computerList = playerService.listOwnedComputers();
 
-/*        for(int i = 0; i < computerList.size(); i++){
-            if(computerList.get(i) != null){
-                computerList.get(i).
-            }
-        }*/
-
-/*        pcImagesList.add(pc1);
-        pcImagesList.add(pc2);
-        pcImagesList.add(pc3);
-        pcImagesList.add(pc4);
-        pcImagesList.add(pc5);
-        pcLabels.add(lblPC1);
-        pcLabels.add(lblPC2);
-        pcLabels.add(lblPC3);
-        pcLabels.add(lblPC4);
-        pcLabels.add(lblPC5);
-
-        for (ImageView img: pcImagesList) {
-            img.setVisible(false);
-        }
         pc1.setVisible(true);
-
-        for (Label lbl: pcLabels) {
-            lbl.setVisible(false);
-        }
-        lblPC1.setVisible(true);*/
-
-        pc1.setVisible(false);
         pc2.setVisible(false);
         pc3.setVisible(false);
         pc4.setVisible(false);
         pc5.setVisible(false);
-        lblPC1.setVisible(false);
+        lblPC1.setVisible(true);
         lblPC2.setVisible(false);
         lblPC3.setVisible(false);
         lblPC4.setVisible(false);
         lblPC5.setVisible(false);
+
     }
 
     @FXML
@@ -143,7 +118,7 @@ public class MainController implements Controller {
 
     @FXML
     void goToBar(MouseEvent event) {
-
+        navigation.loadScreen("energyView");
     }
 
     @FXML
@@ -153,7 +128,6 @@ public class MainController implements Controller {
 
     @FXML
     void goToMyPC(MouseEvent event) {
-        System.out.println("clicked");
         navigation.loadScreen("terminalController");
         ((TerminalController) navigation.getControllers("TerminalController")).startTimer();
     }

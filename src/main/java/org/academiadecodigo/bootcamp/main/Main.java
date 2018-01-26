@@ -2,6 +2,7 @@ package org.academiadecodigo.bootcamp.main;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.FatelaComputer;
 import org.academiadecodigo.bootcamp.model.Player;
@@ -22,5 +23,6 @@ public class Main extends Application{
         navigation.loadScreen("menuView");
     }
 
-    public static void main(String[] args) { launch(args); }
+    public static void main(String[] args) { launch(args);
+    }
 }

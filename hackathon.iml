@@ -4,8 +4,8 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="spring-config" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/spring/model.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/presentation.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/model.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/service.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/spring-config.xml</file>
         </fileset>
