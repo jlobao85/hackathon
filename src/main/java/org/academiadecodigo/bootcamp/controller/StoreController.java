@@ -66,12 +66,6 @@ public class StoreController implements Controller{
             return;
         } else {
             notifyLabel.setText(playerService.buyComputer(row, row.getPrice()));
-            SoundEffects.cashRegister();
-/*           if(playerService.buyComputer(row, row.getPrice())) {
-               notifyLabel.setText(row.getName() + " bought!");
-           } else {
-               notifyLabel.setText("I don't have space at home!");
-           }*/
         }
         tableview.getSelectionModel().clearSelection();
     }

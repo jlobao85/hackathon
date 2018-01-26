@@ -6,7 +6,7 @@ public class BitsToEuro {
         return bits * 5.49;
     }
 
-    public static int convertToBit(int money) {
+    public static int convertToBit(double money) {
         return (int)Math.round(money / 5.49);
     }
 }

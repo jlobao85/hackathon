@@ -12,6 +12,7 @@
                     <entry key="StoreController" value-ref="storeController"/>
                     <entry key="TerminalController" value-ref="terminalController"/>
                     <entry key="BarController" value-ref="barController"/>
+                    <entry key="ProgrammingController" value-ref="programmingController"/>
 
 
                 </map>
@@ -41,6 +42,10 @@
             <property name="playerService" ref="playerService"/>
         </bean>
         <bean id="barController" class="org.academiadecodigo.bootcamp.controller.BarController">
+            <property name="navigation" ref="navigation"/>
+            <property name="playerService" ref="playerService"/>
+        </bean>
+        <bean id="programmingController" class="org.academiadecodigo.bootcamp.controller.ProgrammingController">
             <property name="navigation" ref="navigation"/>
             <property name="playerService" ref="playerService"/>
         </bean>

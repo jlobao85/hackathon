@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.services;
 
 import org.academiadecodigo.bootcamp.BitsToEuro;
+import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.actions.MineMoney;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.Player;
@@ -28,6 +29,8 @@ public class PlayerServiceImpl implements PlayerService {
         }
         player.getComputersOwned().add(computer);
         player.setMoneyAmount(player.getMoneyAmount() - price);
+        player.setBitsAmount(player.getBitsAmount() - BitsToEuro.convertToBit(price));
+        SoundEffects.cashRegister();
         return "Congratulations. You bought a new computer.";
     }
 
