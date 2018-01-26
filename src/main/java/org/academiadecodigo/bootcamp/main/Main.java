@@ -18,19 +18,9 @@ public class Main extends Application{
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("/spring/spring-config.xml");
         Navigation navigation = applicationContext.getBean("navigation", Navigation.class);
         navigation.setStage(primaryStage);
+        primaryStage.centerOnScreen();
         navigation.loadScreen("menuView");
     }
 
-    public static void main(String[] args) { launch(args);
-        /*PlayerService playerService = new PlayerServiceImpl();
-        Player player = new Player("migas");
-        Computer computer = new FatelaComputer();
-        player.getComputersOwned().add(computer);
-        playerService.setPlayer(player);
-        playerService.mineMoney();
-
-        System.out.println(playerService.listOwnedComputers());
-        playerService.destroyComputer(computer);
-        System.out.println(playerService.listOwnedComputers());*/
-    }
+    public static void main(String[] args) { launch(args); }
 }

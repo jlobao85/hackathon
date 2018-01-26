@@ -1,10 +1,7 @@
 package org.academiadecodigo.bootcamp.controller;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
+
 import javafx.application.Platform;
-import javafx.beans.value.WritableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -12,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.util.Duration;
+
 import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.Randomizer;
 import org.academiadecodigo.bootcamp.model.Player;
@@ -20,14 +17,15 @@ import org.academiadecodigo.bootcamp.navigation.Navigation;
 
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.*;
+
 
 public class TerminalController implements Controller {
     private final int EARNERPERHACK = 5;
     private final int BONUSHACK = 20;
     private Navigation navigation;
     private int counter = 0;
-    private String[] stringArray = new String[] {"make ping of death", "check servers security", "weaken seurity", "ddos attack", "take control of system", "try to break in"};
+    private String[] stringArray = new String[] {"null pointer exception virus" ,"inject stuxnet malware", "john the ripper cracking", "make ping of death",
+            "check servers security", "weaken security", "ddos attack", "take control of system", "try to break in" ,"try to connect to server", "get server ip", "get data"};
     private int hacksRight = 0;
     private int time = 0;
     private Timer timer;
@@ -52,8 +50,6 @@ public class TerminalController implements Controller {
     @FXML
     void sendFieldText(KeyEvent event) {
 
-
-
         if(event.getCode() == KeyCode.ENTER) {
             sendText();
         }
@@ -65,7 +61,7 @@ public class TerminalController implements Controller {
     }
 
     public void changeLbl() {
-        codeLbl.setText(stringArray[Randomizer.randomNumber(0,5)]);
+        codeLbl.setText(stringArray[Randomizer.randomNumber(0,11)]);
 
     }
 

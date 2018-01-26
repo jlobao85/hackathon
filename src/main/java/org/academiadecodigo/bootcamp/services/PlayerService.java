@@ -11,6 +11,9 @@ public interface PlayerService extends Service {
     void mineMoney();
     List<Computer> listOwnedComputers();
     void setPlayer(Player player);
-    void hack();
-    //Computer findById(int id);
+    int getPlayerBits();
+    double getPlayerMoney();
+    int getExperience();
+    int getEnergy();
+
 }

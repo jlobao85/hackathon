@@ -4,6 +4,8 @@ import org.academiadecodigo.bootcamp.actions.MineMoney;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.Player;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -48,7 +50,30 @@ public class PlayerServiceImpl implements PlayerService {
     }
 
     @Override
-    public void hack() {
+    public int getPlayerBits() {
+        return player.getBitsAmount();
+    }
 
+    @Override
+    public double getPlayerMoney() {
+        return round(player.getMoneyAmount(), 2);
+    }
+
+    @Override
+    public int getExperience() {
+        return player.getExperience();
+    }
+
+    @Override
+    public int getEnergy() {
+        return player.getEnergy();
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 }

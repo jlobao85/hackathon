@@ -1,5 +1,8 @@
 package org.academiadecodigo.bootcamp.model;
 
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+
 public abstract class Computer implements Comparable<Computer>{
     private String name;
     private int moneyGenerated;

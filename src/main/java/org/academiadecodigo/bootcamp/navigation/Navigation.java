@@ -42,7 +42,7 @@ public final class Navigation {
             // Put the scene on the stage
             setScene(scene);
             char ch = view.charAt(0);
-            String newView = "<Academia de Codigo_>";
+            String newView = "HONEY MONEY";
             stage.setTitle(newView);
 
         } catch (IOException e) {
@@ -52,7 +52,8 @@ public final class Navigation {
     }
     public void setScene(Scene scene) {
         stage.setScene(scene);
-        //stage.setResizable(false);
+        stage.setResizable(false);
+        stage.centerOnScreen();
         stage.show();
     }
 

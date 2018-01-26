@@ -11,13 +11,16 @@ public class Player {
     private double moneyAmount;
     private int bitsAmount;
     private int experience;
+    private int energy;
     private List<Computer> computersOwned;
 
-    public Player(String name) {
+    public Player(String name, Computer computer) {
         this.name = name;
         this.bitsAmount = 25;
+        this.energy = 100;
         this.moneyAmount = BitsToEuro.convertToEuro(bitsAmount);
         this.computersOwned = new ArrayList<>();
+        this.computersOwned.add(computer);
     }
 
     public String getName() {
@@ -58,5 +61,13 @@ public class Player {
 
     public void setBitsAmount(int bitsAmount) {
         this.bitsAmount = bitsAmount;
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(int energy) {
+        this.energy = energy;
     }
 }

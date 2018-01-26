@@ -5,6 +5,11 @@
     <beans>
         <bean id="player" class="org.academiadecodigo.bootcamp.model.Player">
             <constructor-arg name="name" value="BIG"/>
+            <constructor-arg name="computer" ref="computer"/>
+        </bean>
+
+        <bean id="computer" class="org.academiadecodigo.bootcamp.model.FatelaComputer">
+
         </bean>
     </beans>
 </beans>

@@ -17,9 +17,10 @@ public class MineMoney implements Runnable {
         while(true) {
             try {
                 for(Computer c : player.getComputersOwned()) {
-                    player.setBitsAmount(player.getBitsAmount());
+                    player.setBitsAmount(player.getBitsAmount() + c.getMoneyGenerated());
                     player.setMoneyAmount(player.getMoneyAmount() + BitsToEuro.convertToEuro(c.getMoneyGenerated()));
                 }
+                System.out.println("mined");
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();

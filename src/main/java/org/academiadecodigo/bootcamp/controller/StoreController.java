@@ -4,10 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.FatelaComputer;
@@ -19,6 +16,7 @@ import org.academiadecodigo.bootcamp.services.PlayerService;
 import java.util.Date;
 
 public class StoreController implements Controller{
+
     private Navigation navigation;
     private PlayerService playerService;
 
@@ -26,11 +24,11 @@ public class StoreController implements Controller{
         fillHwStore();
     }
     @FXML
-    private Label notifyLabel;
-
+    public Label lblCryptoValue;
     @FXML
-    private TableView<Computer> tableview;
-
+    public TableView<Computer> tableview;
+    @FXML
+    public Label notifyLabel;
     @FXML
     private TableColumn<Computer, String> cmpName;
 
@@ -41,13 +39,23 @@ public class StoreController implements Controller{
     private TableColumn<Computer, String> price;
 
     @FXML
-    private Button back;
+    private Button buttonBack;
 
     @FXML
-    private Button buy;
+    private Button buttonBuyHighSpeed;
 
     @FXML
-    void buyHighSpeedComputer(ActionEvent event) {
+    private ProgressBar energyLevel;
+
+    @FXML
+    private Label lblHackingSkill;
+
+    @FXML
+    private Label lblMoneyValue;
+
+
+    @FXML
+    void sellComputer(ActionEvent event) {
         Computer row = tableview.getSelectionModel().getSelectedItem();
         if(row == null) {
             return;
