@@ -37,6 +37,7 @@
 
         <bean id="terminalController" class="org.academiadecodigo.bootcamp.controller.TerminalController">
             <property name="navigation" ref="navigation"/>
+            <property name="player" ref="player"/>
         </bean>
 
     </beans>

@@ -26,6 +26,7 @@ public class MainController implements Controller {
 
     public void goToPC(ActionEvent actionEvent) {
         navigation.loadScreen("terminalController");
+        ((TerminalController) navigation.getControllers("TerminalController")).startTimer();
     }
 
     public void EnergyView(ActionEvent actionEvent) {

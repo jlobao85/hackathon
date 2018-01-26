@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8de6900-1d95-45f8-90f8-486c8adba9b3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/view/terminalView.fxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/actions/MineMoney.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/actions/MineMoney.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/ComputerController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/ComputerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/MenuController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/MenuController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/TerminalController$1.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/TerminalController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/TerminalController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/TerminalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/main/Main.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/model/Player.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/model/Player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BitsToEuro.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BitsToEuro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/actions/MineMoney.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/actions/MineMoney.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/ComputerController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/ComputerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MenuController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/model/Player.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/model/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/presentation.xml" afterPath="$PROJECT_DIR$/target/classes/spring/presentation.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/view/roomView.fxml" afterPath="$PROJECT_DIR$/target/classes/view/roomView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/presentation.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/presentation.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,14 +49,30 @@
       <file leaf-file-name="TerminalController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="225">
+              <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding>
-                <element signature="e#881#1005#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#2619#2620#0" expanded="true" />
-                <element signature="e#2663#2664#0" expanded="true" />
+                <element signature="e#1706#1707#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1894#1895#0" expanded="true" />
+                <element signature="e#1938#1939#0" expanded="true" />
+                <element signature="e#2056#3281#0" expanded="true" />
+                <element signature="e#3280#3281#0" expanded="true" />
+                <element signature="e#4761#4762#0" expanded="true" />
+                <element signature="e#4793#4794#0" expanded="true" />
+                <element signature="e#4837#4838#0" expanded="true" />
+                <element signature="e#4873#4874#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="presentation.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/presentation.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,12 +80,9 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-              <folding>
-                <element signature="e#710#711#0" expanded="true" />
-                <element signature="e#769#770#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="28" column="92" lean-forward="true" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,16 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="presentation.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/presentation.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -159,6 +150,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -184,11 +182,12 @@
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/actions/MineMoney.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/presentation.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/terminalController.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/ComputerController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/roomView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/KeyValue.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/presentation.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java" />
       </list>
     </option>
@@ -351,6 +350,9 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.academiadecodigo.bootcamp.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.academiadecodigo.bootcamp.controller" />
       <recent name="org.academiadecodigo.bootcamp.navigation" />
@@ -493,7 +495,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13842000" />
+    <option name="totallyTimeSpent" value="20331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="1920" height="971" extended-state="0" />
@@ -586,11 +588,11 @@
           <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -892,25 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/presentation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BitsToEuro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/StoreController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -962,6 +945,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/KeyValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/computerView.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BitsToEuro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/terminalController.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -975,24 +988,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="28" column="92" lean-forward="true" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/presentation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="225">
+          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding>
-            <element signature="e#881#1005#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#2619#2620#0" expanded="true" />
-            <element signature="e#2663#2664#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1894#1895#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#2056#3281#0" expanded="true" />
+            <element signature="e#3280#3281#0" expanded="true" />
+            <element signature="e#4761#4762#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+            <element signature="e#4837#4838#0" expanded="true" />
+            <element signature="e#4873#4874#0" expanded="true" />
           </folding>
         </state>
       </provider>
