@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.model;
 
+import org.academiadecodigo.bootcamp.BitsToEuro;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,12 +9,14 @@ public class Player {
 
     private String name;
     private double moneyAmount;
+    private int bitsAmount;
     private int experience;
     private List<Computer> computersOwned;
 
     public Player(String name) {
         this.name = name;
-        this.moneyAmount = 25;
+        this.bitsAmount = 25;
+        this.moneyAmount = BitsToEuro.convertToEuro(bitsAmount);
         this.computersOwned = new ArrayList<>();
     }
 
@@ -46,5 +50,13 @@ public class Player {
 
     public int getExperience() {
         return experience;
+    }
+
+    public int getBitsAmount() {
+        return bitsAmount;
+    }
+
+    public void setBitsAmount(int bitsAmount) {
+        this.bitsAmount = bitsAmount;
     }
 }

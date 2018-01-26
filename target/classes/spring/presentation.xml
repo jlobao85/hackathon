@@ -23,11 +23,11 @@
 
         <!-- init-method="fillTable -->
         <bean id="computerController" class="org.academiadecodigo.bootcamp.controller.ComputerController">
-
+            <property name="navigation" ref="navigation"/>
         </bean>
 
         <bean id="menuController" class="org.academiadecodigo.bootcamp.controller.MenuController">
-
+            <property name="navigation" ref="navigation"/>
         </bean>
 
         <bean id="storeController" class="org.academiadecodigo.bootcamp.controller.StoreController">
@@ -36,7 +36,7 @@
         </bean>
 
         <bean id="terminalController" class="org.academiadecodigo.bootcamp.controller.TerminalController">
-
+            <property name="navigation" ref="navigation"/>
         </bean>
 
     </beans>

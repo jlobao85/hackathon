@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.actions;
 
+import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.Randomizer;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.Player;
@@ -16,11 +17,8 @@ public class MineMoney implements Runnable {
         while(true) {
             try {
                 for(Computer c : player.getComputersOwned()) {
-                    player.setMoneyAmount(player.getMoneyAmount() + c.getMoneyGenerated());
-                }
-                int random = Randomizer.randomNumber(1, 10);
-                if (random == 10) {
-
+                    player.setBitsAmount(player.getBitsAmount());
+                    player.setMoneyAmount(player.getMoneyAmount() + BitsToEuro.convertToEuro(c.getMoneyGenerated()));
                 }
                 Thread.sleep(10000);
             } catch (InterruptedException e) {

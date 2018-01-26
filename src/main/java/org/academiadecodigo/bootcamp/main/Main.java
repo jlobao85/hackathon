@@ -18,7 +18,7 @@ public class Main extends Application{
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("/spring/spring-config.xml");
         Navigation navigation = applicationContext.getBean("navigation", Navigation.class);
         navigation.setStage(primaryStage);
-        navigation.loadScreen("roomView");
+        navigation.loadScreen("menuView");
     }
 
     public static void main(String[] args) { launch(args);
