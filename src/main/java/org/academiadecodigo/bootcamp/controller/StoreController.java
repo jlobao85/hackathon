@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.controller;
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,6 +16,8 @@ import org.academiadecodigo.bootcamp.navigation.Navigation;
 import org.academiadecodigo.bootcamp.services.PlayerService;
 
 import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class StoreController implements Controller{
 
@@ -23,6 +26,7 @@ public class StoreController implements Controller{
 
     public void initialize() {
         fillHwStore();
+        startTimer();
     }
     @FXML
     public Label lblCryptoValue;
@@ -75,6 +79,26 @@ public class StoreController implements Controller{
     public void back(ActionEvent actionEvent) {
         ((MainController) navigation.getControllers("MainController")).updatePcVisibility();
         navigation.back();
+    }
+
+    public void startTimer() {
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
+                        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
+                        lblHackingSkill.setText(playerService.getExperience() + " XP");
+                        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
+                    }
+                });
+
+            }
+        }, 0, 2000);
+
     }
 
     public void setNavigation(Navigation navigation) {

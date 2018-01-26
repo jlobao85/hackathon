@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
 import org.academiadecodigo.bootcamp.services.PlayerService;
@@ -147,7 +148,7 @@ public class MainController implements Controller {
 
     @FXML
     void goToBar(MouseEvent event) {
-
+        navigation.loadScreen("energyView");
     }
 
     @FXML

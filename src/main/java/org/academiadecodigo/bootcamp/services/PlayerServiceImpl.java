@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.services;
 
+import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.actions.MineMoney;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.Player;
@@ -71,6 +72,33 @@ public class PlayerServiceImpl implements PlayerService {
     @Override
     public int getEnergy() {
         return player.getEnergy();
+    }
+
+    @Override
+    public void drinkCoffee() {
+        int energyLvl = player.getEnergy() + 5;
+        if (energyLvl > 100) {
+            energyLvl = 100;
+        }
+        player.setEnergy(energyLvl);
+    }
+
+    @Override
+    public void fullEnergy() {
+        player.setEnergy(100);
+    }
+
+    @Override
+    public void hack(int bitsEarned, int energyToHack) {
+        player.setBitsAmount(player.getBitsAmount() + bitsEarned);
+        player.setMoneyAmount(player.getMoneyAmount() + BitsToEuro.convertToEuro(bitsEarned));
+        player.setEnergy(player.getEnergy() - energyToHack);
+    }
+
+    @Override
+    public void spendMoney(int moneySpent) {
+        player.setMoneyAmount(player.getMoneyAmount() - moneySpent);
+        player.setBitsAmount(player.getBitsAmount() - BitsToEuro.convertToBit(moneySpent));
     }
 
     public static double round(double value, int places) {

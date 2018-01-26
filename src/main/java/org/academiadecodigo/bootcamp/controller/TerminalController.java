@@ -15,12 +15,14 @@ import org.academiadecodigo.bootcamp.Randomizer;
 import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Player;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
+import org.academiadecodigo.bootcamp.services.PlayerService;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 
 public class TerminalController implements Controller {
+    private int energyToHack;
     private final int EARNERPERHACK = 5;
     private final int BONUSHACK = 20;
     private Navigation navigation;
@@ -31,7 +33,7 @@ public class TerminalController implements Controller {
     private int time = 0;
     private Timer timer;
     private int moneyEarned;
-    private Player player;
+    private PlayerService playerService;
     
     public void initialize() {
     }
@@ -72,6 +74,11 @@ public class TerminalController implements Controller {
 
     public void startTimer() {
         changeLbl();
+        if(playerService.getEnergy() < 25) {
+            codeLbl.setText("I'm dying, i need more energy.");
+            return;
+        }
+        System.out.println(playerService.getEnergy());
         timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
@@ -89,7 +96,7 @@ public class TerminalController implements Controller {
                             int value = hacksRight * EARNERPERHACK + BONUSHACK;
                             codeLbl.setText("You won " + value + " bitcoins;");
                             moneyEarned = value;
-                            timer.cancel();
+                            return;
                         }
                         if(time == 4 && hacksRight == 4) {
                             codeLbl.setText("hack it like a boss");
@@ -104,7 +111,7 @@ public class TerminalController implements Controller {
                 });
 
             }
-        }, 0, 5000);
+        }, 0, 1000);
 
     }
 
@@ -112,8 +119,9 @@ public class TerminalController implements Controller {
         String text = writableField.getText();
         if(text.equals("exit")) {
             navigation.back();
-            player.setBitsAmount(player.getBitsAmount() + moneyEarned);
-            player.setMoneyAmount(player.getMoneyAmount() + BitsToEuro.convertToEuro(moneyEarned));
+            energyToHack = Randomizer.randomNumber(15, 30);
+            playerService.hack(moneyEarned, energyToHack);
+
             resetValues();
             timer.cancel();
         }
@@ -157,8 +165,9 @@ public class TerminalController implements Controller {
         this.time = time;
     }
 
-    public void setPlayer(Player player) {
-        this.player = player;
+    public void setPlayerService(PlayerService playerService) {
+        this.playerService = playerService;
     }
+
 }
 

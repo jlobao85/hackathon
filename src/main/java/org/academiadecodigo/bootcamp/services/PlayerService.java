@@ -15,5 +15,9 @@ public interface PlayerService extends Service {
     double getPlayerMoney();
     int getExperience();
     int getEnergy();
+    void drinkCoffee();
+    void fullEnergy();
+    void hack(int bitsEarned, int energyToHack);
+    void spendMoney(int moneySpent);
 
 }
