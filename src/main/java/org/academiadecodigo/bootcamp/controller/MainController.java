@@ -1,9 +1,7 @@
 package org.academiadecodigo.bootcamp.controller;
 
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
@@ -26,6 +24,7 @@ public class MainController implements Controller {
 
 
     public void initialize() {
+
         playerService.mineMoney();
         lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
         lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
@@ -34,46 +33,51 @@ public class MainController implements Controller {
         startTimer();
         lblPC1.setText(playerService.listOwnedComputers().get(0).getName());
 
+        updatePcVisibility();
+
+    }
+
+
+    public void updatePcVisibility(){
+
         List<Computer> computerList = playerService.listOwnedComputers();
 
-/*        for(int i = 0; i < computerList.size(); i++){
-            if(computerList.get(i) != null){
-                computerList.get(i).
-            }
-        }*/
+        int numbPC = computerList.size();
+        if (numbPC > 0 ){
+            lblPC1.setText(computerList.get(0).getName());
+            setPcVisibility(pc1, lblPC1, true);
+        } else { setPcVisibility(pc1, lblPC1, false); }
 
-/*        pcImagesList.add(pc1);
-        pcImagesList.add(pc2);
-        pcImagesList.add(pc3);
-        pcImagesList.add(pc4);
-        pcImagesList.add(pc5);
-        pcLabels.add(lblPC1);
-        pcLabels.add(lblPC2);
-        pcLabels.add(lblPC3);
-        pcLabels.add(lblPC4);
-        pcLabels.add(lblPC5);
+        if (numbPC > 1 ){
+            lblPC2.setText(computerList.get(1).getName());
+            setPcVisibility(pc2, lblPC2, true);
+        } else { setPcVisibility(pc2, lblPC2, false); }
 
-        for (ImageView img: pcImagesList) {
-            img.setVisible(false);
-        }
-        pc1.setVisible(true);
+        if (numbPC > 2 ){
+            lblPC3.setText(computerList.get(2).getName());
+            setPcVisibility(pc3, lblPC3, true);
+        } else { setPcVisibility(pc3, lblPC3, false); }
 
-        for (Label lbl: pcLabels) {
-            lbl.setVisible(false);
-        }
-        lblPC1.setVisible(true);*/
+        if (numbPC > 3 ){
+            lblPC4.setText(computerList.get(3).getName());
+            setPcVisibility(pc4, lblPC4, true);
+        } else { setPcVisibility(pc4, lblPC4, false); }
 
-        pc1.setVisible(false);
-        pc2.setVisible(false);
-        pc3.setVisible(false);
-        pc4.setVisible(false);
-        pc5.setVisible(false);
-        lblPC1.setVisible(false);
-        lblPC2.setVisible(false);
-        lblPC3.setVisible(false);
-        lblPC4.setVisible(false);
-        lblPC5.setVisible(false);
+        if (numbPC > 4 ){
+            lblPC5.setText(computerList.get(4).getName());
+            setPcVisibility(pc5, lblPC5, true);
+        } else { setPcVisibility(pc5, lblPC5, false); }
+
     }
+
+
+    private void setPcVisibility(ImageView img, Label lbl, boolean isVisible){
+
+        img.setVisible(isVisible);
+        lbl.setVisible(isVisible);
+
+    }
+
 
     @FXML
     private ImageView lblEnergyLevel;

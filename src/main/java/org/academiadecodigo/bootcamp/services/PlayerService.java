@@ -6,7 +6,7 @@ import org.academiadecodigo.bootcamp.model.Player;
 import java.util.List;
 
 public interface PlayerService extends Service {
-    boolean buyComputer(Computer computer, double price);
+    String buyComputer(Computer computer, double price);
     void destroyComputer(Computer computer);
     void mineMoney();
     List<Computer> listOwnedComputers();

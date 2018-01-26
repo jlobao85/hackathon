@@ -12,6 +12,7 @@ import javafx.scene.input.KeyEvent;
 
 import org.academiadecodigo.bootcamp.BitsToEuro;
 import org.academiadecodigo.bootcamp.Randomizer;
+import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Player;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
 
@@ -92,6 +93,7 @@ public class TerminalController implements Controller {
                         }
                         if(time == 4 && hacksRight == 4) {
                             codeLbl.setText("hack it like a boss");
+                            SoundEffects.espetaculo();
                             time++;
                         } else {
                             changeLbl();

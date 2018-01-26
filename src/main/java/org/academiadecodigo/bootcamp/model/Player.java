@@ -16,7 +16,7 @@ public class Player {
 
     public Player(String name, Computer computer) {
         this.name = name;
-        this.bitsAmount = 25;
+        this.bitsAmount = 250;
         this.energy = 100;
         this.moneyAmount = BitsToEuro.convertToEuro(bitsAmount);
         this.computersOwned = new ArrayList<>();

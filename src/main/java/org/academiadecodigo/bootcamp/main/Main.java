@@ -2,6 +2,7 @@ package org.academiadecodigo.bootcamp.main;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.FatelaComputer;
 import org.academiadecodigo.bootcamp.model.Player;
@@ -20,6 +21,8 @@ public class Main extends Application{
         navigation.setStage(primaryStage);
         primaryStage.centerOnScreen();
         navigation.loadScreen("menuView");
+        SoundEffects.gameTheme();
+
     }
 
     public static void main(String[] args) { launch(args); }

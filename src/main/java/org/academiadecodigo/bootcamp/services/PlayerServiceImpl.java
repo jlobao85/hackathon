@@ -17,13 +17,17 @@ public class PlayerServiceImpl implements PlayerService {
     private Player player;
 
     @Override
-    public boolean buyComputer(Computer computer, double price) {
+    public String buyComputer(Computer computer, double price) {
+
         if(player.getComputersOwned().size() >= 5) {
-            return false;
+            return "You don't have space at home!";
+        }
+        if (player.getMoneyAmount() < price){
+            return "You don't have enough money!";
         }
         player.getComputersOwned().add(computer);
         player.setMoneyAmount(player.getMoneyAmount() - price);
-        return true;
+        return "Congratulations. You bought a new computer.";
     }
 
     @Override

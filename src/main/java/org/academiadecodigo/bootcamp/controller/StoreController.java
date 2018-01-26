@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.FatelaComputer;
 import org.academiadecodigo.bootcamp.model.HighSpeedComputer;
@@ -60,16 +61,19 @@ public class StoreController implements Controller{
         if(row == null) {
             return;
         } else {
-           if(playerService.buyComputer(row, row.getPrice())) {
+            notifyLabel.setText(playerService.buyComputer(row, row.getPrice()));
+            SoundEffects.cashRegister();
+/*           if(playerService.buyComputer(row, row.getPrice())) {
                notifyLabel.setText(row.getName() + " bought!");
            } else {
                notifyLabel.setText("I don't have space at home!");
-           }
+           }*/
         }
         tableview.getSelectionModel().clearSelection();
     }
 
     public void back(ActionEvent actionEvent) {
+        ((MainController) navigation.getControllers("MainController")).updatePcVisibility();
         navigation.back();
     }
 
