@@ -1,0 +1,6 @@
+#screenLbl{
+    -fx-background-color: black;
+    -fx-text-fill: chartreuse;
+    -fx-padding:10px;
+    -fx-font-size: 25px;
+}

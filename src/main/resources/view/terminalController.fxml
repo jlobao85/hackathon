@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.academiadecodigo.bootcamp.controller.TerminalController">
+    <children>
+        <TextField fx:id="writableField" layoutX="17.0" layoutY="341.0" onKeyPressed="#sendFieldText" prefHeight="37.0" prefWidth="474.0" />
+        <Button fx:id="sendButton" layoutX="501.0" layoutY="341.0" mnemonicParsing="false" onAction="#sendText" prefHeight="37.0" prefWidth="83.0" text="Send" />
+        <Label fx:id="codeLbl" alignment="CENTER" layoutX="51.0" layoutY="322.0" prefHeight="17.0" prefWidth="425.0" textFill="RED" />
+        <Label layoutX="18.0" layoutY="384.0" prefHeight="17.0" prefWidth="400.0" text="Write 'exit' to leave and 'clear' to clear screen." textFill="RED" />
+        <Label fx:id="screenLbl" alignment="TOP_LEFT" layoutX="18.0" layoutY="14.0" prefHeight="305.0" prefWidth="564.0" stylesheets="@style.css" text="&gt;/" />
+    </children>
+</Pane>
