@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.Pane?>
@@ -9,12 +10,13 @@
    <children>
       <TableView fx:id="tableview" layoutX="93.0" layoutY="63.0" prefHeight="200.0" prefWidth="400.0">
         <columns>
-          <TableColumn prefWidth="112.0" text="Computer" />
-          <TableColumn prefWidth="161.0" text="BTC p/ minute" />
-            <TableColumn prefWidth="126.0" text="Price" />
+          <TableColumn fx:id="cmpName" prefWidth="112.0" text="Computer" />
+          <TableColumn fx:id="bitcoin" prefWidth="161.0" text="BTC p/ minute" />
+            <TableColumn fx:id="price" prefWidth="126.0" text="Price" />
         </columns>
       </TableView>
-      <Button fx:id="back" layoutX="319.0" layoutY="304.0" mnemonicParsing="false" text="Back" onAction="#back" />
+      <Button fx:id="back" layoutX="319.0" layoutY="304.0" mnemonicParsing="false" onAction="#back" text="Back" />
       <Button fx:id="buy" layoutX="238.0" layoutY="304.0" mnemonicParsing="false" onAction="#buyHighSpeedComputer" text="Buy" />
+      <Label fx:id="notifyLabel" layoutX="186.0" layoutY="275.0" prefHeight="17.0" prefWidth="228.0" textFill="RED" />
    </children>
 </Pane>

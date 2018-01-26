@@ -18,6 +18,7 @@
         </bean>
         <bean id="mainController" class="org.academiadecodigo.bootcamp.controller.MainController">
             <property name="playerService" ref="playerService"/>
+            <property name="navigation" ref="navigation"/>
             </bean>
 
         <!-- init-method="fillTable -->
@@ -30,7 +31,8 @@
         </bean>
 
         <bean id="storeController" class="org.academiadecodigo.bootcamp.controller.StoreController">
-
+            <property name="navigation" ref="navigation"/>
+            <property name="playerService" ref="playerService"/>
         </bean>
 
         <bean id="terminalController" class="org.academiadecodigo.bootcamp.controller.TerminalController">

@@ -6,7 +6,7 @@ import java.util.List;
 public class Player {
 
     private String name;
-    private int moneyAmount;
+    private double moneyAmount;
     private int experience;
     private List<Computer> computersOwned;
 
@@ -24,11 +24,11 @@ public class Player {
         this.name = name;
     }
 
-    public int getMoneyAmount() {
+    public double getMoneyAmount() {
         return moneyAmount;
     }
 
-    public void setMoneyAmount(int moneyAmount) {
+    public void setMoneyAmount(double moneyAmount) {
         this.moneyAmount = moneyAmount;
     }
 

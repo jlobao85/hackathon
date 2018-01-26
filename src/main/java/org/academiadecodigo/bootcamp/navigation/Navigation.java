@@ -37,7 +37,7 @@ public final class Navigation {
             //controllers.put(view, fxmlLoader.<Controller>getController());
 
             // Create a new scene and add it to the stack
-            Scene scene = new Scene(root, MIN_WIDTH, MIN_HEIGHT);
+            Scene scene = new Scene(root);
             scenes.push(scene);
             // Put the scene on the stage
             setScene(scene);
