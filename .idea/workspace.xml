@@ -2,73 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80fa8e1d-dd34-494d-ba49-58de8ece824a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ClassesView/class.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ClassesView/class.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/ProgrammingController$1$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/ProgrammingController$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/ProgrammingController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/Music.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/Sound.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/TinySound.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/ByteList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MemMusic$MemMusicReference.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MemMusic.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MemSound$MemSoundReference.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MemSound.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/Mixer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MusicReference.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/SoundReference.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamInfo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamMusic$StreamMusicReference.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamMusic.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamSound$StreamSoundReference.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamSound.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/UpdateRunner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT-jar-with-dependencies.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/hackathon-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/ProgrammingController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/Music.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/Sound.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/TinySound.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/ByteList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MemMusic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MemSound.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/Mixer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/MusicReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/SoundReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamMusic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/StreamSound.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/kuusisto/tinysound/internal/UpdateRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/view/programmingClassView.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/view/programmingClassView.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/services/StoreService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/services/StoreServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/services/StoreService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/services/StoreServiceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/music.wav" afterPath="$PROJECT_DIR$/src/main/resources/music.wav" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/music.wav" afterPath="$PROJECT_DIR$/target/classes/music.wav" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/BitsToEuro.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/BitsToEuro.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/MainController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/StoreController$1$1.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/StoreController$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/StoreController$1.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/StoreController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/StoreController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/StoreController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/TerminalController.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/controller/TerminalController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/services/PlayerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/services/PlayerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon.iml" afterPath="$PROJECT_DIR$/hackathon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BitsToEuro.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BitsToEuro.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/coin.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/destroy.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/dooropen.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/goldigger.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/knocking.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/music.wav" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/SoundEffects.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/SoundEffects.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/StoreController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/StoreController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/TerminalController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/services/PlayerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/services/PlayerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/presentation.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/presentation.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/presentation.xml" afterPath="$PROJECT_DIR$/target/classes/spring/presentation.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,11 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoundEffects.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/SoundEffects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -126,6 +76,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/main/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/controller/StoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/SoundEffects.java" />
       </list>
     </option>
   </component>
@@ -141,6 +92,11 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -203,6 +159,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bootcamp" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hackathon" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hackathon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,16 +310,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517084183713</updated>
-      <workItem from="1517084187384" duration="144000" />
+      <workItem from="1517084187384" duration="644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144000" />
+    <option name="totallyTimeSpent" value="644000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1012" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="1012" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -367,13 +329,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -384,7 +347,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -419,6 +381,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/SoundEffects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
           <folding />
         </state>
       </provider>

@@ -14,7 +14,7 @@ public class SoundEffects {
 
         }
     }
-
+/*
     public static void getTheCoin() {
 
         TinySound.init();
@@ -51,7 +51,7 @@ public class SoundEffects {
         for (int i = 0; i < 1; i++) {
             theme.play();
         }
-    }
+    }*/
 
     public static void cashRegister(){
         TinySound.init();
@@ -76,7 +76,7 @@ public class SoundEffects {
             theme.play();
         }
     }
-
+/*
     public static void destroy(){
         TinySound.init();
         Sound theme = TinySound.loadSound("destroy.wav");
@@ -84,7 +84,7 @@ public class SoundEffects {
             theme.play();
         }
     }
-
+*/
 
 
 }
