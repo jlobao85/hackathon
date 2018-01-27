@@ -37,6 +37,7 @@ public class Main extends Application{
 
         //Start game theme music
         SoundEffects.gameTheme();
+
     }
 
     public static void main(String[] args) { launch(args); }

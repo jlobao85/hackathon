@@ -7,7 +7,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.model.FatelaComputer;
 import org.academiadecodigo.bootcamp.model.HighSpeedComputer;
@@ -15,7 +14,6 @@ import org.academiadecodigo.bootcamp.model.Server;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
 import org.academiadecodigo.bootcamp.services.PlayerService;
 
-import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -35,13 +33,13 @@ public class StoreController implements Controller{
     @FXML
     public Label notifyLabel;
     @FXML
-    private TableColumn<Computer, String> cmpName;
+    private TableColumn<Object, Object> cmpName;
 
     @FXML
-    private TableColumn<Computer, Integer> bitcoin;
+    private TableColumn<Object, Object> bitcoin;
 
     @FXML
-    private TableColumn<Computer, String> price;
+    private TableColumn<Object, Object> price;
 
     @FXML
     private Button buttonBack;
@@ -66,12 +64,6 @@ public class StoreController implements Controller{
             return;
         } else {
             notifyLabel.setText(playerService.buyComputer(row, row.getPrice()));
-            SoundEffects.cashRegister();
-/*           if(playerService.buyComputer(row, row.getPrice())) {
-               notifyLabel.setText(row.getName() + " bought!");
-           } else {
-               notifyLabel.setText("I don't have space at home!");
-           }*/
         }
         tableview.getSelectionModel().clearSelection();
     }

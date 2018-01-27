@@ -7,6 +7,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import org.academiadecodigo.bootcamp.BitsToEuro;
+import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
 import org.academiadecodigo.bootcamp.services.PlayerService;
@@ -153,12 +154,11 @@ public class MainController implements Controller {
 
     @FXML
     void goToClasses(MouseEvent event) {
-
+        navigation.loadScreen("programmingClassView");
     }
 
     @FXML
     void goToMyPC(MouseEvent event) {
-        System.out.println("clicked");
         navigation.loadScreen("terminalController");
         ((TerminalController) navigation.getControllers("TerminalController")).startTimer();
     }

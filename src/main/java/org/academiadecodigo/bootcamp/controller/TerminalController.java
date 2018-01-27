@@ -111,7 +111,7 @@ public class TerminalController implements Controller {
                 });
 
             }
-        }, 0, 1000);
+        }, 0, 7000);
 
     }
 
@@ -121,7 +121,9 @@ public class TerminalController implements Controller {
             navigation.back();
             energyToHack = Randomizer.randomNumber(15, 30);
             playerService.hack(moneyEarned, energyToHack);
-
+            if(hacksRight >= 4) {
+                SoundEffects.espetaculo();
+            }
             resetValues();
             timer.cancel();
         }
@@ -140,6 +142,7 @@ public class TerminalController implements Controller {
             hacksRight++;
             System.out.println(hacksRight);
         }
+        SoundEffects.keyboard();
         if(screenLbl.getText().equals(">/")) {
             screenLbl.setText(">/" + text + "\n>/");
             counter++;

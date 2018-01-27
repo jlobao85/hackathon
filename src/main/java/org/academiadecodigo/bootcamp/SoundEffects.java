@@ -8,7 +8,7 @@ public class SoundEffects {
     public static void gameTheme() {
 
         TinySound.init();
-        Sound key = TinySound.loadSound("music.wav");
+        Sound key = TinySound.loadSound("music2.wav");
         for (int i = 0; i < 1; i++) {
             key.play();
 
