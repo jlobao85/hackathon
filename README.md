@@ -1,6 +1,6 @@
 # hackathon
 Game - HoneyMoney
-This game project is a result of 24h Hackathon in the 12th week of an intensive && immersive Java && JavaScript fullstack coding bootcamp.
+This game project is a result of 24h Hackathon in the 12th week of an intensive && immersive Java && JavaScript fullstack coding bootcamp @ <Academia de Código_>.
 
 The developers:
 - André Pereira - github.com/andre-ha-pereira
