@@ -15,15 +15,28 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main extends Application{
 
+    private final String SPRING_CONFIG_PATH = "/spring/";
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("/spring/spring-config.xml");
-        Navigation navigation = applicationContext.getBean("navigation", Navigation.class);
-        navigation.setStage(primaryStage);
-        primaryStage.centerOnScreen();
-        navigation.loadScreen("menuView");
-        SoundEffects.gameTheme();
 
+        //Load spring config
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(SPRING_CONFIG_PATH + "spring-config.xml");
+
+        //Load navigation bean
+        Navigation navigation = applicationContext.getBean("navigation", Navigation.class);
+
+        //Set navigation primary stage
+        navigation.setStage(primaryStage);
+
+        //Center the stage window
+        primaryStage.centerOnScreen();
+
+        //Load menu view
+        navigation.loadScreen("menuView");
+
+        //Start game theme music
+        SoundEffects.gameTheme();
     }
 
     public static void main(String[] args) { launch(args); }
