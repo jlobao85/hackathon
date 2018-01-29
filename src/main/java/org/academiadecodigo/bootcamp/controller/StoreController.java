@@ -26,6 +26,7 @@ public class StoreController implements Controller{
         fillHwStore();
         startTimer();
     }
+
     @FXML
     public Label lblCryptoValue;
     @FXML
@@ -73,6 +74,17 @@ public class StoreController implements Controller{
         navigation.back();
     }
 
+
+    private void updateTopInfo(){
+
+        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
+        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
+        lblHackingSkill.setText(playerService.getExperience() + " XP");
+        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
+
+    }
+
+
     public void startTimer() {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
@@ -81,10 +93,7 @@ public class StoreController implements Controller{
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
-                        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
-                        lblHackingSkill.setText(playerService.getExperience() + " XP");
-                        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
+                        updateTopInfo();
                     }
                 });
 
@@ -112,4 +121,5 @@ public class StoreController implements Controller{
     public void setPlayerService(PlayerService playerService) {
         this.playerService = playerService;
     }
+
 }

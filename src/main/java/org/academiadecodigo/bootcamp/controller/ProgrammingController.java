@@ -12,6 +12,7 @@ import org.academiadecodigo.bootcamp.services.PlayerService;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
 public class ProgrammingController implements Controller{
     private Navigation navigation;
     private PlayerService playerService;
@@ -62,6 +63,17 @@ public class ProgrammingController implements Controller{
         startTimer();
     }
 
+
+    private void updateTopInfo(){
+
+        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
+        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
+        lblHackingSkill.setText(playerService.getExperience() + " XP");
+        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
+
+    }
+
+
     public void startTimer() {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
@@ -70,10 +82,7 @@ public class ProgrammingController implements Controller{
                 Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
-                        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
-                        lblHackingSkill.setText(playerService.getExperience() + " XP");
-                        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
+                        updateTopInfo();
                     }
                 });
 

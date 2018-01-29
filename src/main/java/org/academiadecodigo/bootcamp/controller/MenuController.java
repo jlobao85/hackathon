@@ -26,22 +26,23 @@ public class MenuController implements Controller {
     @FXML
     private ImageView bitImg4;
 
-    @FXML
-    void exit(MouseEvent event) {
-        System.exit(0);
-    }
-
-    @FXML
-    void loadGame(MouseEvent event) {
-
-    }
 
     @FXML
     void startGame(MouseEvent event) {
         navigation.loadScreen("roomView");
     }
 
+    @FXML
+    void exit(MouseEvent event) {
+        System.exit(0);
+    }
+
+    @FXML
+    void loadGame(MouseEvent event) { }
+
+
     public void setNavigation(Navigation navigation) {
         this.navigation = navigation;
     }
+
 }

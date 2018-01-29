@@ -6,13 +6,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import org.academiadecodigo.bootcamp.BitsToEuro;
-import org.academiadecodigo.bootcamp.SoundEffects;
 import org.academiadecodigo.bootcamp.model.Computer;
 import org.academiadecodigo.bootcamp.navigation.Navigation;
 import org.academiadecodigo.bootcamp.services.PlayerService;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -21,21 +18,16 @@ import java.util.TimerTask;
 public class MainController implements Controller {
     private PlayerService playerService;
     private Navigation navigation;
-    private ArrayList<ImageView> pcImagesList;
-    private ArrayList<Label> pcLabels;
 
 
     public void initialize() {
 
         playerService.mineMoney();
-        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
-        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
-        lblHackingSkill.setText(playerService.getExperience() + " XP");
-        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
-        startTimer();
-        lblPC1.setText(playerService.listOwnedComputers().get(0).getName());
 
+        updateTopInfo();
         updatePcVisibility();
+
+        startTimer();
 
     }
 
@@ -45,38 +37,58 @@ public class MainController implements Controller {
         List<Computer> computerList = playerService.listOwnedComputers();
 
         int numbPC = computerList.size();
-        if (numbPC > 0 ){
-            lblPC1.setText(computerList.get(0).getName());
-            setPcVisibility(pc1, lblPC1, true);
-        } else { setPcVisibility(pc1, lblPC1, false); }
-
-        if (numbPC > 1 ){
-            lblPC2.setText(computerList.get(1).getName());
-            setPcVisibility(pc2, lblPC2, true);
-        } else { setPcVisibility(pc2, lblPC2, false); }
-
-        if (numbPC > 2 ){
-            lblPC3.setText(computerList.get(2).getName());
-            setPcVisibility(pc3, lblPC3, true);
-        } else { setPcVisibility(pc3, lblPC3, false); }
-
-        if (numbPC > 3 ){
-            lblPC4.setText(computerList.get(3).getName());
-            setPcVisibility(pc4, lblPC4, true);
-        } else { setPcVisibility(pc4, lblPC4, false); }
-
-        if (numbPC > 4 ){
-            lblPC5.setText(computerList.get(4).getName());
-            setPcVisibility(pc5, lblPC5, true);
-        } else { setPcVisibility(pc5, lblPC5, false); }
+        // 5 PCs
+        if (numbPC > 4 ){ lblPC5.setText(computerList.get(4).getName()); }
+        setPcVisibility(table3, pc5, lblPC5, numbPC > 4);
+        // 4 PCs
+        if (numbPC > 3 ){ lblPC4.setText(computerList.get(3).getName()); }
+        setPcVisibility(table2, pc4, lblPC4, numbPC > 3);
+        // 3 PCs
+        if (numbPC > 2 ){ lblPC3.setText(computerList.get(2).getName()); }
+        setPcVisibility(table2, pc3, lblPC3, numbPC > 2);
+        // 2 PCs
+        if (numbPC > 1 ){ lblPC2.setText(computerList.get(1).getName()); }
+        setPcVisibility(table1, pc2, lblPC2, numbPC > 1);
+        // 1 PC
+        if (numbPC > 0 ){ lblPC1.setText(computerList.get(0).getName()); }
+        setPcVisibility(table1, pc1, lblPC1, numbPC > 0);
 
     }
 
 
-    private void setPcVisibility(ImageView img, Label lbl, boolean isVisible){
+    private void setPcVisibility(ImageView table, ImageView img, Label lbl, boolean isVisible){
 
+        table.setVisible(isVisible);
         img.setVisible(isVisible);
         lbl.setVisible(isVisible);
+
+    }
+
+
+    private void updateTopInfo(){
+
+        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
+        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
+        lblHackingSkill.setText(playerService.getExperience() + " XP");
+        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
+
+    }
+
+
+    public void startTimer() {
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        updateTopInfo();
+                    }
+                });
+
+            }
+        }, 0, 2000);
 
     }
 
@@ -169,26 +181,6 @@ public class MainController implements Controller {
     }
 
 
-    public void startTimer() {
-        Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                Platform.runLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        lblMoneyValue.setText(playerService.getPlayerMoney() + " €");
-                        lblCryptoValue.setText(playerService.getPlayerBits() + " BTC");
-                        lblHackingSkill.setText(playerService.getExperience() + " XP");
-                        energyLevel.progressProperty().setValue((double)playerService.getEnergy() / 100);
-                    }
-                });
-
-            }
-        }, 0, 2000);
-
-    }
-
     public void setPlayerService(PlayerService playerService) {
         this.playerService = playerService;
     }
@@ -196,4 +188,5 @@ public class MainController implements Controller {
     public void setNavigation(Navigation navigation) {
         this.navigation = navigation;
     }
+
 }
